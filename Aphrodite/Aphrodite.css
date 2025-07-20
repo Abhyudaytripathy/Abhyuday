@@ -846,6 +846,10 @@ section.active{
     .contact-box .field-box {
         grid-template-columns: repeat(2, 1fr);
     }
+    .home-detail .btn-sci{
+        flex-direction: column-reverse;
+        margin-bottom: 7rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
