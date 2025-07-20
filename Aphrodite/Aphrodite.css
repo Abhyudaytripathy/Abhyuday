@@ -152,20 +152,35 @@ section.active{
     font-size: clamp(3.5rem, 10vw, 5.5rem);
 }
 
-.home-detail h2{
+.home-detail h2 {
     display: inline-block;
     font-size: 3.2rem;
     margin-top: -1rem;
 }
 
-.home-detail h2 span{
-    margin-top: 20px;
-    position: relative;
+.home-detail h2 span {
     display: inline-block;
+    vertical-align: middle;
+    position: absolute;
     color: transparent;
-    -webkit-text-stroke: .07rem var(--main-color);
+    -webkit-text-stroke: 0.07rem var(--main-color);
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
+    margin-left: 1rem;
+}
+@keyframes display-text{
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    5%, 25%{
+        opacity: 1;
+        visibility: visible;
+    }
+    30%, 100%{
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 .home-detail h2 span::before{
@@ -179,13 +194,6 @@ section.active{
     animation: fill-text 4s linear infinite;
 }
 
-@keyframes display-text{
-    25%,100%{
-        display: none;
-        visibility: none;
-    }
-}
-
 @keyframes fill-text{
     10%, 100%{
         width: 0;
@@ -193,12 +201,16 @@ section.active{
     70%,90%{
         width: 100%;
     }
+    100% {
+        width: 0;
+    }
 }
 
 .home-detail p{
     font-size: 1.6rem;
     margin: 1rem 0 2.5rem;
 }
+
 
 .home-detail .btn-sci {
     display: flex;
