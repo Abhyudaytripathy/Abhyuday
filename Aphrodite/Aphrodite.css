@@ -182,6 +182,7 @@ section.active{
 @keyframes display-text{
     25%,100%{
         display: none;
+        visibility: none;
     }
 }
 
