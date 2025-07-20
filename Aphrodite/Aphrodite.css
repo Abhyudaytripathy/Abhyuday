@@ -847,7 +847,6 @@ section.active{
         grid-template-columns: repeat(2, 1fr);
     }
     .home-detail .btn-sci{
-        flex-direction: column-reverse;
         margin-bottom: 7rem;
     }
 }
