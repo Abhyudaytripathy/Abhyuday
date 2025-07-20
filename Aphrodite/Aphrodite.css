@@ -156,6 +156,7 @@ section.active{
     display: inline-block;
     font-size: 3.2rem;
     margin-top: -1rem;
+    padding-top: 1rem;
 }
 
 .home-detail h2 span {
