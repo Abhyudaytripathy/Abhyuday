@@ -168,12 +168,6 @@ section.active{
     animation-delay: calc(-4s * var(--i));
 }
 
-@keyframes display-text{
-    25%,100%{
-        display: none;
-    }
-}
-
 .home-detail h2 span::before{
     content: attr(data-text);
     position: absolute;
@@ -183,6 +177,12 @@ section.active{
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
+}
+
+@keyframes display-text{
+    25%,100%{
+        display: none;
+    }
 }
 
 @keyframes fill-text{
