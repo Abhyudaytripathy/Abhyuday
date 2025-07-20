@@ -882,7 +882,7 @@ section.active{
 
     .home-detail .btn-sci .sci{
         margin-left: 0;
-        margin-bottom: 2rem;
+        padding: 2.5rem 3rem  3.5rem;
     }
 
     .contact-box form{
