@@ -877,6 +877,7 @@ section.active{
 
     .home-detail .btn-sci{
         flex-direction: column-reverse;
+        margin-bottom: 50px;
     }
 
     .home-detail .btn-sci .sci{
